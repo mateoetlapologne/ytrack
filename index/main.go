@@ -7,12 +7,15 @@ func main() {
 }
 
 func index(fstr string, sstring string) int {
-	for index, letter := range fstr {
-		_ = letter
-		_ = index
-		if string(letter) == sstring {
-			return index
+	x := len(sstring)
+	for i := 0; x <= len(fstr); {
+		if fstr[i:x] == sstring {
+			return i
+		} else {
+			i++
+			x++
 		}
 	}
 	return -1
+
 }
