@@ -6,13 +6,13 @@ import (
 )
 
 func main() {
-	fmt.Println(nthRune("Hello", 3))
+	fmt.Println(nthRune("Hello", 1))
 }
 
 func nthRune(s string, n int) rune {
-	for i, r := range s {
-		if i == n {
-			return r
+	for index, letter := range s {
+		if index == n {
+			return letter
 		}
 	}
 	return 0
