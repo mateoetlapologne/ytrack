@@ -3,13 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	sqrt(16)
+	fmt.Println(sqrt(16))
 }
 
-func sqrt(nb int) {
+func sqrt(nb int) int {
 	for i := nb; i > 0; i-- {
 		if nb == (i * i) {
-			fmt.Print(i)
+			return i
 		}
 	}
+	return 0
 }
