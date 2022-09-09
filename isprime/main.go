@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	isprime(157)
+	isprime(152)
 }
 
 func isprime(nb int) bool {
