@@ -13,8 +13,8 @@ func makerange(min int, max int) []int {
 	if min >= max {
 		return nil
 	} else {
-		for j := 0; j < max; j++ {
-			a[j] = j + 1
+		for j := 0; j < max-min; j++ {
+			a[j] = min + j
 		}
 	}
 	return a
