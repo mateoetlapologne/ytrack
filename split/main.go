@@ -8,23 +8,23 @@ func main() {
 
 func slicewithspace(s string, c string) []string {
 	var res []string
-	var timeres string
+	var tempres string
 	x := len(c)
 	lastch := s[len(s)-1]
 	for i := 0; x < len(s)+1; {
 		if s[i:x] == c {
-			res = append(res, timeres)
-			timeres = ""
+			res = append(res, tempres)
+			tempres = ""
 			i++
 			x++
 		} else {
-			timeres += string(s[i])
+			tempres += string(s[i])
 			i++
 			x++
 		}
 	}
-	timeres += string(lastch)
-	res = append(res, timeres)
+	tempres += string(lastch)
+	res = append(res, tempres)
 	var finalres []string
 	var newword string
 	for index, word := range res {
