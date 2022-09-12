@@ -8,7 +8,7 @@ func main() {
 
 func lastrune(s string) rune {
 	for index, lettre := range s {
-		if index == len(s)-1 {
+		if index == 0 {
 			return lettre
 		}
 	}
