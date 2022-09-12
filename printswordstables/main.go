@@ -1,12 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"github.com/01-edu/z01"
+)
 
 func main() {
-	fmt.Println(printwordstables(slicewithspace("Hello how are you?")))
+	a := SplitWhiteSpaces(("Hello how are you?"))
+	PrintWordStables(a)
 }
 
-func slicewithspace(s string) []string {
+func SplitWhiteSpaces(s string) []string {
 	var res []string
 	var timeres string
 	for _, lettre := range s {
@@ -22,16 +25,11 @@ func slicewithspace(s string) []string {
 
 }
 
-func printwordstables(carra []string) string {
-	var res string
-	for index, word := range carra {
-		if index+1 != len(carra) {
-			res += word
-			res += "\n"
-		} else {
-			res += word
+func PrintWordStables(carra []string) {
+	for _, newres := range carra {
+		for _, char := range string(newres) {
+			z01.PrintRune(char)
 		}
+		z01.PrintRune('\n')
 	}
-	return res
-
 }

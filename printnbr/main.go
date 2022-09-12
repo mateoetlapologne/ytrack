@@ -1,18 +1,18 @@
-package main
+package printnbr
 
 import "github.com/01-edu/z01"
 
 func main() {
-	printnbr(123)
+	Printnbr(123)
 }
 
-func printnbr(number int) {
+func Printnbr(number int) {
 	if number < 0 {
 		z01.PrintRune('-')
 		number = -number
 	}
 	if number > 9 {
-		printnbr(number / 10)
+		Printnbr(number / 10)
 	}
 	z01.PrintRune(rune(number%10 + 48))
 }
