@@ -3,4 +3,4 @@ module main
 go 1.19
 
 require github.com/01-edu/z01 v0.1.0
-require github.com/mateoetlapologne/ytrack v0
+require github.com/mateoetlapologne/ytrack v0.1.0

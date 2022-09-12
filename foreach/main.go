@@ -1,6 +1,6 @@
 package main
 
-import l "/printnbr"
+import "github.com/mateoetlapologne/ytrack"
 
 func main() {
 	a := []int{1, 2, 3, 4, 5, 6}
@@ -9,7 +9,7 @@ func main() {
 
 func foreach(a []int) int {
 	for _, number := range a {
-		l.(number)4
-		l.P
+		ytrack.Printnbr(number)
+
 	}
 }
