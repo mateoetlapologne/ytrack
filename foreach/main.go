@@ -1,6 +1,6 @@
 package main
 
-import "github.com/mateoetlapologne/ytrack"
+import "fmt"
 
 func main() {
 	a := []int{1, 2, 3, 4, 5, 6}
@@ -9,7 +9,7 @@ func main() {
 
 func foreach(a []int) int {
 	for _, number := range a {
-		ytrack.Printnbr(number)
-
+		fmt.Println(number)
 	}
+	return 0
 }
