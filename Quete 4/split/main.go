@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	fmt.Printf("%#v\n", slicewithspace("HelloHAhowHAareHAyou?", "HA"))
@@ -39,4 +42,5 @@ func slicewithspace(s string, c string) []string {
 
 	}
 	return finalres
+	strconv.AppendBool()
 }
